@@ -4,7 +4,10 @@ import {
 import { LLMChain } from 'langchain/chains';
 import { ChatOpenAI } from 'langchain/chat_models/openai';
 import config from '../config';
-import { getChatPrompt } from '../utils/helpers';
+import {
+  getChatPrompt,
+  // getChatMemory,
+} from '../utils/helpers';
 
 const chatModel = new ChatOpenAI({
   openAIApiKey: config.keys.OPENAI_API_KEY,
@@ -40,9 +43,13 @@ client.on(Events.MessageCreate, async (message) => {
 
     const cleanedMessage = message.content.replace(new RegExp(`<@${clientUser.id}>`, 'g'), '').trim();
 
+    const prompt = getChatPrompt();
+    // const memory = getChatMemory();
+
     const chain = new LLMChain({
-      prompt: getChatPrompt(),
       llm: chatModel,
+      // memory,
+      prompt,
     });
 
     const response = await chain.call({ messageContent: cleanedMessage });
