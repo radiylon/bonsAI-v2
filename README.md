@@ -1,7 +1,7 @@
 # bonsAI 🌳
 
 <figure>
-  <img src="https://media.discordapp.net/attachments/909697628122513468/1109739881669861386/bonsai_tree3.png?width=1336&height=1336" style="width: 50%" /><br/>
+  <img src="https://media.discordapp.net/attachments/909697628122513468/1109739881669861386/bonsai_tree3.png?width=1336&height=1336" style="width: 50%" />
   <figcaption>"A bonsai tree that acts as a main computer for an AI brain, office setting." - Midjourney</figcaption>
 </figure>
 <br><br>
