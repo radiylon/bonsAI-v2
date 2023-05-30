@@ -5,6 +5,7 @@
   <figcaption>"A bonsai tree that acts as a main computer for an AI brain, office setting." - Midjourney</figcaption>
 </figure>
 <br><br>
+
 BonsAI is Discord bot specializing in haiku responses built on top of a [personal starter repo](https://github.com/radiylon/rad-discord-gpt-starter). Uses an LLMChain rather than calling a model directly.
 
 ## Example 🐴
